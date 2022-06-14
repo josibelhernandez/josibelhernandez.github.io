@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Figuras Geometricas</title>
+		<!-- Bootstrap -->
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/546b213db9.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./public/css/styles.css">
+  	</head>
+	<body>
+		<header>
+			<h1>Calculadora de figuras geométricas</h1>
+		</header>
+		<div class="container container-custom">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="box-content">
+						<div class="title-box">
+							<h2>Cuadrado</h2>
+						</div>
+						<div class="box-operation">
+							<form>
+								<label for="inputCuadrado">Escribe cuanto mide cada lado del cuadrado:</label>
+								<input id="inputCuadrado" type="number" placeholder="Ingrese lado del cuadrado" />
+								<button type="button" onclick="calcularPerimetroCuadrado()">Calcular</button>
+							</form>
+						</div>
+						<div class="box-result">
+							<h3>Resultado</h3>
+							<div class="result-perimetro">
+								<label>Perímetro:</label>
+								<label id="perimetroCuadradoR"></label>
+							</div>
+							<div class="result-perimetro">
+								<label>Área:</label>
+								<label id="areaCuadradoR"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="box-content">
+						<div class="title-box">
+							<h2>Triángulo</h2>
+						</div>
+						<div class="box-operation">
+							<form>
+								<label for="inputLado1">Escribe cuanto mide cada lado del triángulo:</label>
+								<input id="inputLado1" type="number" placeholder="Ingrese lado A del triángulo" />
+								<input id="inputLado2" type="number" placeholder="Ingrese lado B del triángulo" />
+								<input id="inputBase" type="number" placeholder="Ingrese base del triángulo" />
+								<input id="inputAltura" type="number" placeholder="Ingrese altura del triángulo" />
+								<button type="button" onclick="calcularTriangulo()">Calcular</button>
+							</form>
+						</div>
+						<div class="box-result">
+							<h3>Resultado</h3>
+							<div class="result-perimetro">
+								<label>Perímetro:</label>
+								<label id="perimetroTrianguloR"></label>
+							</div>
+							<div class="result-perimetro">
+								<label>Área:</label>
+								<label id="areaTrianguloR"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="box-content">
+						<div class="title-box">
+							<h2>Triángulo Isósceles</h2>
+						</div>
+						<div class="box-operation">
+							<form>
+								<label for="inputLado1">Escribe cuanto mide cada lado del triángulo:</label>
+								<input id="inputLado11" type="number" placeholder="Ingrese lado A del triángulo" />
+								<input id="inputLado22" type="number" placeholder="Ingrese lado B del triángulo" />
+								<input id="inputBaseI" type="number" placeholder="Ingrese base del triángulo" />
+								<button type="button" onclick="calcularTrianguloIsosceles()">Calcular</button>
+							</form>
+						</div>
+						<div class="box-result">
+							<h3>Resultado</h3>
+							<div class="result-perimetro">
+								<label>Altura:</label>
+								<label id="alturaTrianguloR"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="box-content">
+						<div class="title-box">
+							<h2>Círculo</h2>
+						</div>
+						<div class="box-operation">
+							<form>
+								<label for="inputRadio">Escribe cuanto mide el radio del círculo:</label>
+								<input id="inputRadio" type="number" placeholder="Ingrese radio del círculo" />
+								<button type="button" onclick="calcularCirculo()">Calcular</button>
+							</form>
+						</div>
+						<div class="box-result">
+							<h3>Resultado</h3>
+							<div class="result-perimetro">
+								<label>Diámetro:</label>
+								<label id="diametroCirculoR"></label>
+							</div>
+							<div class="result-perimetro">
+								<label>Perímetro:</label>
+								<label id="perimetroCirculoR"></label>
+							</div>
+							<div class="result-perimetro">
+								<label>Área:</label>
+								<label id="areaCirculoR"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer><p>Desarrollado por <span>Josibel Hernández</span></p></footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="./public/js/figuras.js"></script>
+	</body>
+</html>
